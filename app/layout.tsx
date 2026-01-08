@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Playfair_Display, Open_Sans } from "next/font/google";
 import "./globals.css";
 
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
+
 const playfair = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
@@ -27,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${openSans.variable} antialiased`}
+        className={`${playfair.variable} ${openSans.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
       >
+        <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
