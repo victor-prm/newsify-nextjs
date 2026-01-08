@@ -11,7 +11,7 @@ export default function Header() {
                     height={24}
                     priority
                 />
-                <h1 className="font-bold text-xl font-playfair-display">
+                <h1 className="font-black text-xl font-playfair-display">
                     Newsify
                 </h1>
             </div>
