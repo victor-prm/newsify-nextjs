@@ -4,4 +4,37 @@
 @theme inline {
   --font-open-sans: var(--font-open-sans);
   --font-playfair-display: var(--font-playfair-display);
+
+  --color-newsify-white: #ffffff;
+  --color-newsify-gray-lightest: #f4f4f2;
+  --color-newsify-gray-light: #e8e8e8;
+  --color-newsify-gray-medium: #bbbfca;
+  --color-newsify-gray-dark: #495464;
+  --color-newsify-black: #000000;
+  --color-newsify-warning: #FF5D5D;
+
+  --color-newsify-green-50: #EFF8E9;
+  --color-newsify-green-100: #D9F0C6;
+  --color-newsify-green-200: #B8E49B;
+  --color-newsify-green-300: #94D66F;
+  --color-newsify-green-400: #6FCA44;
+  --color-newsify-green-500: #46781B;
+  --color-newsify-green-600: #3B6316;
+  --color-newsify-green-700: #2F4E11;
+  --color-newsify-green-800: #23390D;
+  --color-newsify-green-900: #172508;
+  --color-newsify-green-950: #0C1204;
+}
+
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }

@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${openSans.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
+        className={`${playfair.variable} ${openSans.variable} antialiased grid grid-rows-[auto_1fr_auto] h-screen`}
       >
         <Header></Header>
         {children}
