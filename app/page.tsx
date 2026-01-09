@@ -11,7 +11,6 @@ export default async function Home() {
         {articles.map(article => (
           <ArticleItem key={article.id} article={article} />
         ))}
-
       </main>
     </>
   );

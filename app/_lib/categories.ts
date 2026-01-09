@@ -1,27 +1,23 @@
-import { footerListSchema } from "../_lib/schemas/footer";
-import type { FooterLinkType } from "../_lib/schemas/footer";
+import type { FooterLinkType } from "./schemas/footer";
+import { FaGlobeAfrica, FaBookmark, FaStar } from "react-icons/fa";
 
-const rawFooterList = [
+export const footerList: FooterLinkType[] = [
   {
     title: "Home",
-    icon: "fas fa-home",
     href: "/",
+    icon: FaGlobeAfrica,
   },
   {
     title: "Saved",
-    icon: "fas fa-bookmark",
     href: "/saved",
+    icon: FaBookmark,
   },
   {
     title: "Popular",
-    icon: "fas fa-star",
     href: "/popular",
+    icon: FaStar,
   },
 ];
-
-export const footerList: FooterLinkType[] =
-  footerListSchema.parse(rawFooterList);
-
 
 export const categoryList = [
     {

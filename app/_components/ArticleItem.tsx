@@ -12,7 +12,7 @@ type ArticleItemProps = {
 export default function ArticleItem({ article }: ArticleItemProps) {
     return (
         <article className="flex gap-4 p-4">
-            <figure className="w-28 shrink-0 aspect-square rounded-xl overflow-clip">
+            <figure className="w-28 shrink-0 aspect-square rounded-xl overflow-clip border-gray-300/50 border-1">
                 <Image
                     className="object-cover w-full h-full"
                     src={article.thumbnail || "https://picsum.photos/200/200"} // fallback
