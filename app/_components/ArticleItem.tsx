@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { Article } from "../_lib/actions";
+import { Article } from "../_lib/types";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
+import { formatDate } from "../_lib/utils";
 
 
 type ArticleItemProps = {
@@ -29,7 +30,7 @@ export default function ArticleItem({ article }: ArticleItemProps) {
                             {article.title}
                         </Link>
                     </h3>
-                    <p className="text-xs text-gray-600">{article.byline}</p>
+                    <p className="text-xs text-gray-600">{formatDate(article.pub_date)} — {article.byline}</p>
                 </hgroup>
                 <p className="text-sm text-gray-700">{article.abstract}</p>
             </div>
